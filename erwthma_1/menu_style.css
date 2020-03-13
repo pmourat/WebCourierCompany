@@ -1,0 +1,455 @@
+* {  /* asterisk selects all elements*/
+	margin:0px;
+	padding:0px;
+}
+
+
+
+body {
+	background:url("blurry4.png");
+	
+}
+
+
+ ul{
+	
+	float:left;
+	border: 1px solid rgba(45, 45, 125, 0.2);
+	background-color:rgba(45, 45, 125, 0.48);
+	border-radius:15px;
+	margin-left:10px;
+	
+	
+}
+
+
+
+ul li {
+	float:left;
+	/*background-color:rgba(45, 45, 125, 0.23);*/
+	/*border:1px solid rgba(45, 45, 125, 0.2);*/
+	width:248px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	list-style:none;
+	
+}
+
+ul li a {
+   color:white;	
+   text-decoration:none;
+   display:block;
+   font-family: Poiret One;
+}
+
+ul li a:hover {
+	background-color:#29293d;
+	border-radius:15px;
+}
+
+
+
+ul li ul li {
+	
+	display:none;
+	
+}
+ul li:hover ul li {
+	display:block;
+	
+}
+
+p {
+	margin-left:3px;
+	margin-bottom:18px;
+	font-size:18px;
+	text-decoration: underline;
+	font-family: Poiret One; /*prostethike 24/09*/
+	
+	color:white;    /*prostethike 24/09*/
+}
+
+
+
+/*-------------------------------------------------------GENIKA------------------------------------------------*/
+
+
+#master {
+	margin-left:500px;
+	margin-bottom:10px;
+	font-weight: bold;
+	font-size:25px;
+	border-bottom-style: groove;
+	border-bottom-color: white;
+	font-family: Poiret One;
+	color:white;
+	display:inline-block;
+	
+}
+
+#mp {
+	margin-top:-15px;
+	margin-left:3px;
+	margin-bottom:18px;
+	font-size:18px;
+	text-decoration:none;
+}
+
+
+input[type=submit] {
+    background-color: #29293d;
+	border:none;
+	border-radius:2px;
+	width: 60px;
+	height:40px;
+    margin-left:0px;
+	margin-top:20px;
+	text-align:center;
+	color:white;
+	font-family:  'Poiret One';
+}
+
+input[type=submit]:hover {
+    background-color: rgba(135, 129, 141);
+}
+
+
+/*-------------------------------------------------------TRANSIT-EMPLOYEE------------------------------------------------*/
+
+
+#create_transit_employee{
+	float:left;
+	display:inline-block;
+    padding: 40px;
+    width:260px;
+	height:465px;
+	background-color: rgba(45, 45, 125, 0.23);
+	margin-top:40px;
+	margin-right:40px;
+	margin-left:80px;
+    color:white;
+    border-radius:8px;
+	font-family:  'Poiret One';
+	
+}
+
+
+
+#create_transit_employee input[type=text], #create_transit_employee input[type=password] {
+	height:30px;
+	width:180px;
+	border:1px solid rgba(23, 3, 3, 0.2);
+    background-color: rgba(23, 3, 3, 0.48);
+    color: white;
+    font-family:  'Poiret One';
+	margin-top:20px;
+	margin-bottom:10px;
+	margin-right:20px;
+	margin-left:10px;
+	border-radius:2px;
+	
+	padding-left:4px;
+	font-size:15px;
+}
+
+
+
+
+
+#modify_transit_employee {
+	float:left;
+	display:inline-block;
+	padding: 40px;
+    width:180px;
+	height:400px;
+	background-color: rgba(45, 45, 125, 0.23);
+	margin-top:40px;
+	margin-left:40px;
+    color:white;
+    border-radius:8px;
+	font-family:  'Poiret One';
+	
+}
+
+
+#modify_transit_employee input[type=text], #modify_transit_employee input[type=password] {
+	height:30px;
+	width:180px;
+	border:1px solid rgba(23, 3, 3, 0.2);
+    background-color: rgba(23, 3, 3, 0.48);
+    color: white;
+    font-family:  'Poiret One';
+	margin-top:20px;
+	margin-bottom:10px;
+	margin-right:20px;
+	margin-left:10px;
+	border-radius:2px;
+	
+	padding-left:4px;
+	font-size:15px;
+}
+
+
+
+#delete_transit_employee {
+	
+	display:inline-block;
+	padding: 40px;
+    width:300px;
+	height:200px;
+	background-color: rgba(45, 45, 125, 0.23);
+	margin-top:40px;
+	margin-left:40px;
+	margin-right:40px;
+    color:white;
+    border-radius:8px;
+	font-family:  'Poiret One';
+	
+}
+
+#delete_transit_employee input[type=text], #delete_transit_employee input[type=password] {
+	height:30px;
+	width:180px;
+	border:1px solid rgba(23, 3, 3, 0.2);
+    background-color: rgba(23, 3, 3, 0.48);
+    color: white;
+    font-family:  'Poiret One';
+	margin-top:20px;
+	margin-bottom:10px;
+	margin-right:20px;
+	margin-left:10px;
+	border-radius:2px;
+	padding-left:4px;
+	font-size:15px;
+}
+
+/*-------------------------------------------------------LOCAL-EMPLOYEE------------------------------------------------*/
+
+
+#create_local_employee{
+	float:left;
+	display:inline-block;
+    padding: 40px;
+    width:320px;
+	height:380px;
+	background-color: rgba(45, 45, 125, 0.23);
+	margin-top:100px;
+	margin-left:20px;
+    color:white;
+    border-radius:8px;
+	font-family:  'Poiret One';
+	
+}
+
+
+
+#create_local_employee input[type=text], #create_local_employee input[type=password] {
+	height:30px;
+	width:180px;
+	border:1px solid rgba(23, 3, 3, 0.2);
+    background-color: rgba(23, 3, 3, 0.48);
+    color: white;
+    font-family:  'Poiret One';
+	margin-top:20px;
+	margin-bottom:10px;
+	margin-right:20px;
+	margin-left:10px;
+	border-radius:2px;
+	
+	padding-left:4px;
+	font-size:15px;
+}
+
+
+
+
+
+#modify_local_employee {
+	float:left;
+	display:inline-block;
+	padding: 40px;
+    width:625px;
+	height:170px;
+	background-color: rgba(45, 45, 125, 0.23);
+	margin-top:50px;
+	margin-left:20px;
+    color:white;
+    border-radius:8px;
+	font-family:  'Poiret One';
+	
+}
+
+
+#modify_local_employee input[type=text], #modify_local_employee input[type=password] {
+	height:30px;
+	width:180px;
+	border:1px solid rgba(23, 3, 3, 0.2);
+    background-color: rgba(23, 3, 3, 0.48);
+    color: white;
+    font-family:  'Poiret One';
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:20px;
+	margin-left:10px;
+	border-radius:2px;
+	
+	padding-left:4px;
+	font-size:15px;
+}
+
+
+
+#delete_local_employee {
+	float:left;
+	display:inline-block;
+	padding: 40px;
+    width:300px;
+	height:180px;
+	background-color: rgba(45, 45, 125, 0.23);
+	margin-top:25px;
+	margin-left:20px;
+    color:white;
+    border-radius:8px;
+	font-family:  'Poiret One';
+	
+}
+
+#delete_local_employee input[type=text], #delete_local_employee input[type=password] {
+	height:30px;
+	width:180px;
+	border:1px solid rgba(23, 3, 3, 0.2);
+    background-color: rgba(23, 3, 3, 0.48);
+    color: white;
+    font-family:  'Poiret One';
+	margin-top:20px;
+	margin-bottom:10px;
+	margin-right:20px;
+	margin-left:10px;
+	border-radius:2px;
+	padding-left:4px;
+	font-size:15px;
+}
+
+
+/*-------------------------------------------------------LOCAL STORE------------------------------------------------*/
+
+#create_store {
+	float:left;
+	display:inline-block;
+	padding: 40px;
+    width:200px;
+	height:420px;
+	background-color: rgba(45, 45, 125, 0.23);
+	margin-top:90px;
+	margin-left:20px;
+    color:white;
+    border-radius:8px;
+	font-family:  'Poiret One';
+}
+
+#create_store input[type=text], #delete_store input[type=text] {
+	height:30px;
+	width:180px;
+	font-size:16px;
+	margin-top:7px;
+	margin-bottom:0px;
+	margin-left:0px;
+	border-radius:2px;
+	outline:none;
+	border:1px solid rgba(23, 3, 3, 0.2);
+    background-color: rgba(23, 3, 3, 0.48);
+	padding-left: 4px;
+	color: white;
+	font-family:  'Poiret One';
+}
+
+#modify_store {
+	float:left;
+	display:inline-block;
+	padding: 40px;
+    width:420px;
+	height:420px;
+	background-color: rgba(45, 45, 125, 0.23);
+	margin-top:90px;
+	margin-left:20px;
+    color:white;
+    border-radius:8px;
+	font-family:  'Poiret One';
+}
+
+#modify_store input[type=text] {
+	height:30px;
+	width:180px;
+	font-size:16px;
+	margin-top:7px;
+	margin-bottom:0px;
+	margin-left:0px;
+	border-radius:2px;
+	outline:none;
+	border:1px solid rgba(23, 3, 3, 0.2);
+    background-color: rgba(23, 3, 3, 0.48);
+	padding-left: 4px;
+	color: white;
+	font-family:  'Poiret One';
+}
+
+#delete_store {
+	float:left;
+	display:inline-block;
+	padding: 40px;
+    width:200px;
+	height:250px;
+	background-color: rgba(45, 45, 125, 0.23);
+	margin-top:90px;
+	margin-left:20px;
+    color:white;
+    border-radius:8px;
+	font-family:  'Poiret One';
+}
+
+#delete_store input[type=text] {
+	height:30px;
+	width:180px;
+	font-size:16px;
+	margin-top:7px;
+	margin-bottom:0px;
+	margin-left:0px;
+	border-radius:2px;
+	outline:none;
+	border:1px solid rgba(23, 3, 3, 0.2);
+    background-color: rgba(23, 3, 3, 0.48);
+	padding-left: 4px;
+	color: white;
+	font-family:  'Poiret One';
+}
+
+/*-------------------------------------------------------ADMIN LOGIN------------------------------------------------*/
+
+#login {
+	padding: 40px;
+    width:300px;
+	height:240px;
+	background-color: rgba(45, 45, 125, 0.23);
+	margin-top:150px;
+	margin-left:450px;
+    color:white;
+    border-radius:8px;
+	font-family:  'Poiret One';
+}
+	
+#login input[type=text],#login input[type=password] {
+    height:30px;
+	width:180px;
+	border:1px solid rgba(23, 3, 3, 0.2);
+    background-color: rgba(23, 3, 3, 0.48);
+    color: white;
+    font-family:  'Poiret One';
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-right:20px;
+	margin-left:10px;
+	border-radius:2px;
+	padding-left:4px;
+	font-size:15px;
+}

@@ -1,0 +1,52 @@
+body{
+        background-image: url(er3.jpg);
+        background-size: cover;
+        color: white;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-attachment: fixed;
+    }
+
+  
+  
+    form{
+	     padding: 40px;
+         width:500px;
+	     height:400px;
+	     background-color: rgba(45, 45, 125, 0.23);
+	     margin:150px auto;
+		 color:white;
+		 border-radius:8px;
+		 font-family:  'Poiret One';
+    }
+	
+	 .form-control{
+        background-color: rgba(23, 3, 3, 0.48);
+        color: white;
+        border-radius:1px solid #291212;
+		font-family:  'Poiret One';
+      }
+	  
+	  h1{
+        text-align: center;
+		font-family:  'Poiret One';
+		font-size: 32px;
+      }
+	  
+	  .btn-default{
+        width: 50%;
+        margin: 20px 103px;
+		text-align:center;
+        
+      }
+	  
+	  #sub {
+		background-color: rgba(135, 129, 141);
+		border:none;
+		border-radius:2px;
+		width: 50%;
+		height:30px;
+        margin: 20px 103px;
+		text-align:center;
+		
+	  }

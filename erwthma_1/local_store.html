@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Control Panel</title>
+<link rel="stylesheet" type="text/css" href="menu_style.css">
+<link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+<ul>
+  <p id="master">HERMES COURIER</p><br>
+  <li><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+  <li><a href="local_store.html"><i class="fa fa-map-pin"></i> Local Store</a>
+  
+  
+  </li>
+  <li><a href="local_employee.html"><i class="fa fa-user-circle"></i> L. Employee</a>
+  
+   </li>
+  <li><a href="transit_employee.html"><i class="fa fa-user-circle-o"></i> T. Employee</a>
+  
+  </li>
+  <li><a href="index.php"><i class="fa fa-sign-out"></i> Logout</a></li>
+ 
+  
+</ul>
+<br>
+
+<!-----------------------------------------------------------LOCAL STORE----------------------------------------------------------->
+
+
+<div id="create_store">
+<form action="create_store.php" method="post">
+  <p id="mp"><i class="fa fa-plus"></i> CREATE LOCAL STORE</p>
+  
+  <input type="text" id="cr_name" name="cr_name" placeholder="Enter Name"><br>
+  
+  <input type="text" id="cr_street" name="cr_street" placeholder="Enter Street"><br>
+  
+  <input type="text" id="cr_num" name="cr_num" placeholder="Enter Number"><br>
+  
+  <input type="text" id="cr_city" name="cr_city" placeholder="Enter City"><br>
+  
+  <input type="text" id="cr_zip" name="cr_zip" placeholder="Enter Zip Code"><br>
+  
+  <input type="text" id="cr_pnum" name="cr_pnum" placeholder="Enter Phone Number"><br>
+ 
+  <input type="text" id="cr_lat" name="cr_lat" placeholder="Enter Latitude"><br>
+  
+  <input type="text" id="cr_long" name="cr_long" placeholder="Enter Longitude"><br>
+  
+  <input type="text" id="cr_tran" name="cr_tran" placeholder="Enter Transit Hub"><br>
+  
+  <input type="submit" id="cr_st_submit"  name="cr_st_submit" value="Submit" >
+  
+  <input type="submit" id="cr_st_cancel" name="cr_st_cancel" value="Cancel" >
+  
+</form>
+</div>
+
+<div id="modify_store">
+<form action="modify_store.php" method="post">
+  <p id="mp"><i class="fa fa-cog"></i> MODIFY LOCAL STORE</p>
+  
+  <input type="text" id="m_name" name="m_name" placeholder="Enter Name">
+  <input type="text" id="new_name" name="new_name" placeholder="Enter New Name"><br>
+  
+  <input type="text" id="m_street" name="m_street" placeholder="Enter Street">
+  <input type="text" id="new_street" name="new_street" placeholder="Enter New Street"><br>
+  
+   <input type="text" id="m_num" name="m_num" placeholder="Enter Number">
+   <input type="text" id="new_num" name="new_num" placeholder="Enter New Number"><br>
+  
+  <input type="text" id="m_city" name="m_city" placeholder="Enter City">
+  <input type="text" id="new_city" name="new_city" placeholder="Enter New City"><br>
+  
+  <input type="text" id="m_zip" name="m_zip" placeholder="Enter Zip Code">
+  <input type="text" id="new_zip" name="new_zip" placeholder="Enter New Zip Code"><br>
+  
+  <input type="text" id="m_pnum" name="m_pnum" placeholder="Enter Phone Number">
+  <input type="text" id="new_pnum" name="new_pnum" placeholder="Enter New Phone Number"><br>
+ 
+  <input type="text" id="m_lat" name="m_lat" placeholder="Enter Latitude">
+  <input type="text" id="new_lat" name="new_lat" placeholder="Enter New Latitude"><br>
+  
+  <input type="text" id="m_long" name="m_long" placeholder="Enter Longitude">
+  <input type="text" id="new_long" name="new_long" placeholder="Enter New Longitude"><br>
+  
+  <input type="text" id="m_tran" name="m_tran" placeholder="Enter Transit Hub">
+  <input type="text" id="new_tran" name="new_tran" placeholder="Enter New Transit Hub"><br>
+  
+  <input type="submit" id="m_st_submit"  name="m_st_submit" value="Submit" >
+  
+  <input type="submit" id="m_st_cancel" name="m_st_cancel" value="Cancel">
+  
+</form>
+</div>
+
+<div id="delete_store">
+<form action="delete_store.php" method="post">
+  <p id="mp"><i class="fa fa-remove"></i> DELETE LOCAL STORE</p>
+  
+  <input type="text" id="d_name" name="d_name" placeholder="Enter Name"><br>
+  
+  <input type="text" id="d_street" name="d_street" placeholder="Enter Street"><br>
+  
+  <input type="text" id="d_num" name="d_num" placeholder="Enter Number"><br>
+  
+  <input type="text" id="d_city" name="d_city" placeholder="Enter City"><br>
+  
+  <input type="text" id="d_zip" name="d_zip" placeholder="Enter Zip Code"><br>
+  
+  <input type="submit" id="d_st_submit"  name="d_st_submit" value="Submit" >
+  
+  <input type="submit" id="d_st_cancel" name="d_st_cancel" value="Cancel" >
+  
+</form>
+</div>
+
+
+
+</body>
+</html>

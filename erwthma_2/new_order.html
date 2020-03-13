@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="menu_style.css">
+<link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<ul>
+  <p id="master">HERMES COURIER</p><br>
+  <li><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+  <li><a href="new_order.html"><i class="fa fa-map-pin"></i> New Order</a>
+  </li>
+  <li><a href="track_order.html"><i class="fa fa-user-circle"></i> Track Order</a>
+   </li>
+  <li><a href="delivery_conf.html"><i class="fa fa-user-circle-o"></i> Delivery Confirmation</a>
+  </li>
+  <li><a href="index.php"><i class="fa fa-sign-out"></i> Logout</a></li>
+ 
+</ul>
+<br>
+
+<p id="msg"> ** Τα πεδία 'Ημερομηνία' και 'Ώρα' συμπληρώνονται αυτόματα !</p>
+
+<script>
+function myFunction() {
+    var d = new Date();
+    var n = d.toLocaleTimeString();
+	var date_str = d.toLocaleDateString();
+    document.myform.time.value = n;
+	document.myform.date.value = date_str;
+	
+	<!--var timestamp = Math.round((new Date()).getTime() / 1000);-->
+	<!--document.myform.tr_number.value = "a"+timestamp+"b";-->
+	
+	
+	return true;
+}
+
+</script>
+
+ 
+<form id="new_order" name="myform" action="create_order.php" method="post">
+ <p id="mp"><i class="fa fa-plus"></i> CREATE ORDER</p>
+ 
+
+  <input type="text" name="weight" placeholder="Enter weight"><br>
+ 
+  <input type="text" name="type" placeholder="Enter type"><br>
+
+  <input type="text" name="sender" placeholder="Enter Sender"><br>
+ 
+  <input type="text" name="recipient" placeholder="Enter Recipient"><br>
+
+  <input type="text" name="origin" placeholder="Enter origin city"><br>
+  
+  <input type="text" name="destination" placeholder="Enter destination city"><br> 
+  
+  <input type="text" name="dest_store" placeholder="Enter destination local store"><br> 
+ 
+  <input type="text"  name="date" placeholder="Date"><br>
+ 
+  <input type="text" name="time" placeholder="Time"><br>
+  
+  <input type="submit" name ="submit" onclick="myFunction()"; value="Submit">
+   
+</form>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Control Panel</title>
+<link rel="stylesheet" type="text/css" href="menu_style.css">
+<link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+<ul>
+  <p id="master">HERMES COURIER</p><br>
+  <li><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+  <li><a href="local_store.html"><i class="fa fa-map-pin"></i> Local Store</a>
+  
+  
+  </li>
+  <li><a href="local_employee.html"><i class="fa fa-user-circle"></i> L. Employee</a>
+  
+   </li>
+  <li><a href="transit_employee.html"><i class="fa fa-user-circle-o"></i> T. Employee</a>
+  
+  </li>
+  <li><a href="index.php"><i class="fa fa-sign-out"></i> Logout</a></li>
+ 
+  
+</ul>
+<br>
+<!--------------------------------------------------------TRANSIT-EMPLOYEE----------------------------------------------------------->
+
+<div id="create_transit_employee">
+<form action="tem_create.php" method="post">
+  <p id="mp"><i class="fa fa-user-plus"></i> CREATE ACCOUNT</p>
+  
+  <label for="cr_fnm">First Name:</label>
+  <input type="text" id="cr_fnm" placeholder="Enter first name" name="cr_fnm"><br>
+  
+  <label for="cr_lnm">Last Name:</label>
+  <input type="text" id="cr_lnm" placeholder="Enter last name" name="cr_lnm" ><br>
+  
+  <label for="cr_unm">Username:</label>
+  <input type="text" id="cr_unm" placeholder="Enter username" name="cr_unm"><br>
+  
+  <label for="cr_pwd">Password:</label>
+  <input type="password"  id="cr_pwd" placeholder="Enter password" name="cr_pwd"><br>
+  
+  <label for="cr_hub">Transit Hub:</label>
+  <input type="text"  id="cr_hub" placeholder="Enter working place" name="cr_hub"><br>
+  
+  <input id="cr_sub" type="submit" name="cr_sub" value="Submit" >
+  
+  <input id="cr_cancel" type="submit" name="cr_cancel" value="Cancel">
+  
+</form>
+</div>
+
+<div id="modify_transit_employee">
+<form action="tem_modify.php" method="post">
+  <p id="mp"><i class="fa fa-cog"></i> MODIFY ACCOUNT</p>
+  
+  <label for="m_unm">Username:</label>
+  <input type="text" id="m_unm" placeholder="Enter username" name="m_unm">
+  
+  <label for="new_unm">New Username:</label>
+  <input type="text" id="new_unm" placeholder="Enter username" name="new_unm"><br>
+  
+  <label for="m_pwd">Password:</label>
+  <input type="password"  id="m_pwd" placeholder="Enter password" name="m_pwd">
+  
+  <label for="new_pwd">New Password:</label>
+  <input type="password"  id="new_pwd" placeholder="Enter password" name="new_pwd"><br>
+  
+  <input id="m_sub" type="submit" name="m_sub" value="Submit">
+  
+  <input id="m_cancel" type="submit" name="m_cancel" value="Cancel">
+  
+</form>
+</div>
+
+<div id="delete_transit_employee">
+<form action="tem_delete.php"  method = "post">
+  <p id="mp"><i class="fa fa-user-times"></i> DELETE ACCOUNT</p>
+  
+  <label for="d_unm">Username:</label>
+  <input type="text" id="d_unm" placeholder="Enter username" name="d_unm"><br>
+  
+  <label for="d_pwd">Password:</label>
+  <input type="password"  id="d_pwd" placeholder="Enter password" name="d_pwd"><br>
+  
+  <input id="d_sub" type="submit"  name="d_sub" value="Submit">
+  
+  <input id="d_cancel" type="submit" name="d_cancel" value="Cancel">
+   
+</form>
+</div>
+</body>
+</html>

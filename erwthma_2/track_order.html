@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="menu_style.css">
+<link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+
+
+<ul>
+  <p id="master">HERMES COURIER</p><br>
+  <li><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+  <li><a href="new_order.html"><i class="fa fa-map-pin"></i> New Order</a>
+  
+ 
+  </li>
+  <li><a href="track_order.html"><i class="fa fa-user-circle"></i> Track Order</a>
+ 
+   </li>
+  <li><a href="delivery_conf.html"><i class="fa fa-user-circle-o"></i> Delivery Confirmation</a>
+ 
+  </li>
+  <li><a href="index.php"><i class="fa fa-sign-out"></i> Logout</a></li>
+ 
+  
+</ul>
+<br>
+
+<div id="track_order">
+<form action="track.php" method="post">
+  <input type="text" name="trn" id="trn" placeholder="Enter Tracking Number"/>
+  <input type="submit" name="sbm" id="sbm" value="search"/>
+</form>
+</div>
+
+</body>
+</html>
