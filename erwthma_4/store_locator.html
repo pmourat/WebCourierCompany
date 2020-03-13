@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Control Panel</title>
+<link rel="stylesheet" type="text/css" href="menu.css">
+<link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV8XerR6qhJwHCUYWmzitbiME_A-4y2Tg"></script>
+<script>
+
+$(document).ready(function(){
+$("#town").keyup(function(){
+  
+    var town=$("#town").val();
+	if (town != ''){
+    $.ajax({  
+      method:"POST",	
+      url: 'dokimi.php', 
+      data:{town:town},
+      dataType : "json",
+      success:function(data)
+      {
+		var ul = $("<ul class='lista'>");   // create a new ul element
+        $.each(data, function (name, value) {
+            ul.append("<li class='listaki'>" + value.Πόλη +"</li><br>");
+        });
+        $("#result").html(ul);
+		
+		$(document).on('click', 'li', function(){  
+           $('#town').val($(this).text()); 
+		   //alert("hi");
+		    $.each(data, function (name, value) {
+			 
+                if(value.Πόλη == $('#town').val()){
+				  
+				   var platos=value.Γ_Πλάτος;
+				   var mhkos=value.Γ_Μήκος;
+				   
+		           var map = new google.maps.Map(document.getElementById('map'), {
+                     zoom: 6,
+                     center: new google.maps.LatLng(39.479966, 22.540245),
+                   });
+		   
+		   
+		           var marker;
+                   marker = new google.maps.Marker({
+                     position: new google.maps.LatLng(value.Γ_Πλάτος,value.Γ_Μήκος),
+                     map: map
+                   });
+				}
+           });
+		   
+
+        });
+	   }
+     });
+     }
+   
+});
+
+ 
+
+});
+</script>
+
+<style>
+  .navbar navbar-inverse {
+	background-color:rgba(45, 45, 125, 0.48);
+	font-family:  'Poiret One';
+	color:white;	
+}
+.navbar-header {
+	
+	font-family:  'Poiret One';
+	color:white;	
+}
+.nav navbar-nav {
+	background-color:rgba(45, 45, 125, 0.48);
+	font-family:  'Poiret One';
+	color:white;	
+}
+.container-fluid {
+	background-color:rgba(45, 45, 125, 0.48);
+	font-family:  'Poiret One';
+	color:white;	
+}
+
+#map {
+background-color:transparent;
+margin-top:-295px;
+}
+
+form{
+ margin-top:200px;
+ margin-left:2px;
+ 
+ width:298px;
+ height:45px;
+ border-radius:2px;
+}
+
+.form-group {
+margin-top:2px;
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hermes Courier</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="parcel_tracking.html"><i class="fa fa-envelope-o"></i> Parcel Tracking</a></li>
+      <li><a href="map.php"><i class="fa fa-dot-circle-o"></i> Branch Locations</a></li>
+      <li><a href="store_locator.html"><i class="fa fa-map-pin"></i> Nearest Store Locator</a></li> 
+    </ul>
+  </div>
+</nav>
+  
+  <input type="text" name="town" id="town"  placeholder="Enter City"/>
+  <div id="result"></div> 
+  <br>
+  <form action="locate_store.php" method="post">
+  <div class="form-group">
+  <input type="text" name="zip" id="zip"  placeholder="Enter Zip Code"/>
+  </div>
+  <input type="submit" value="Search"/>
+  </form>
+
+
+
+ 
+<div id="map" style="width:50%;height:450px"></div>
+
+
+</body>
+</html>

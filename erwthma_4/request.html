@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn").click(function(){
+var name = $("#name").val();
+//var name='dida';
+var dataString='name='+name;
+    $.ajax({  
+      type:'POST',	
+      url: 'dokimi.php', 
+      data:dataString,
+      dataType : 'json',
+      success: function(data)   
+      {   
+          $('#output').html(data.pas);
+		
+      }
+    });
+
+
+});
+});
+</script>
+</head>
+<body>
+<div id="main">
+<h2 id="output">jQuery Ajax $.post() Method</h2>
+<hr>
+<form id="form" method="post">
+<div id="namediv"><label>Name</label>
+<input type="text" name="name" id="name" placeholder="Name"/><br></div>
+
+</form>
+<button id="btn">Send Data</button>
+</div>
+</body>
+</html>

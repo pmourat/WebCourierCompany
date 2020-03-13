@@ -1,0 +1,137 @@
+* {  /* asterisk selects all elements*/
+	margin:0px;
+	padding:0px;
+}
+
+
+
+body {
+	background:url("blurry4.png");
+	
+}
+
+
+
+p { 
+    
+	margin-left:3px;
+	margin-bottom:18px;
+	font-size:18px;
+	text-decoration: underline;
+}
+
+/*-------------------------------------------------------GENIKA------------------------------------------------*/
+
+
+#master {
+	margin-left:280px;
+	margin-bottom:10px;
+	font-weight: bold;
+	font-size:25px;
+	border-bottom-style: groove;
+	border-bottom-color: white;
+	font-family: Poiret One;
+	color:white;
+	display:inline-block;
+	
+	
+}
+
+#mp {
+	margin-top:-15px;
+	margin-left:3px;
+	margin-bottom:18px;
+	font-size:18px;
+	text-decoration:none;
+}
+
+input[type=submit] {
+    background-color: #29293d;
+	border:none;
+	border-radius:2px;
+	width: 60px;
+	height:30px;
+    margin-left:10px;
+	margin-top:5px;
+	text-align:center;
+	color:white;
+	font-family:  'Poiret One';
+	font-size:16px;
+	display:inline-block;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(135, 129, 141);
+}
+
+
+input[type=text]{
+	height:30px;
+	width:180px;
+	border:1px solid rgba(23, 3, 3, 0.2);
+    background-color: rgba(23, 3, 3, 0.48);
+    color: white;
+    font-family:  'Poiret One';
+	margin-top:2px;
+	margin-bottom:5px;
+	margin-right:20px;
+	margin-left:10px;
+	border-radius:2px;
+	display:inline-block;
+	padding-left:4px;
+	font-size:15px;
+	display:inline-block;
+}
+
+
+#search{
+	float:left;
+	/*display:inline-block;*/
+    padding: 20px;
+    width:280px;
+	height:40px;
+	background-color: rgba(45, 45, 125, 0.23);
+	margin-top:40px;
+	margin-right:40px;
+	margin-left:20px;
+    color:white;
+    border-radius:8px;
+	font-family:  'Poiret One';
+	
+}
+
+#town{
+	margin-top:60px;
+	margin-left:10px;
+	width:200px;
+	height:34px;
+}
+
+
+
+.lista{
+	width:200px;
+	float:left;
+	border: 1px solid rgba(45, 45, 125, 0.2);
+	background-color:rgba(45, 45, 125, 0.48);
+	border-radius:4px;
+	margin-top:0px;
+	margin-left:10px;
+	
+}
+
+
+
+.listaki {
+	text-align:center;
+	float:left;
+	/*background-color:rgba(45, 45, 125, 0.23);*/
+	/*border:1px solid rgba(45, 45, 125, 0.2);*/
+	width:200px;
+	height:40px;
+	line-height:40px;
+	list-style:none;
+	margin-top:0px;
+	color:white;
+	
+}
